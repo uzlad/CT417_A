@@ -31,6 +31,9 @@ public class module {
         this.moduleName = moduleName;
         this.moduleID = moduleID;
         this.lecturer = lecturer;
+
+        this.courses = new ArrayList<programme>();
+        this.students = new ArrayList<student>();
     }
 
     public String getModuleName() {
