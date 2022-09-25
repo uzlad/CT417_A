@@ -42,7 +42,7 @@ public class studentTest {
 
     @Test
     public void getModule() {
-        assertTrue(s1.getModule() != null);
+        assertTrue(s1.getModules() != null);
 
     }
 

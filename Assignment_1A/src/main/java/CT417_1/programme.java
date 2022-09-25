@@ -25,10 +25,15 @@ public class programme {
         this.courseName = courseName;
         this.startDate = startDate;
         this.endDate = endDate;
+
+        this.modules = new ArrayList<module>();
+        this.students = new ArrayList<student>();
     }
 
     public programme(String courseName) {
         this.courseName = courseName;
+        this.modules = new ArrayList<module>();
+        this.students = new ArrayList<student>();
     }
 
     public DateTime getStartDate() {

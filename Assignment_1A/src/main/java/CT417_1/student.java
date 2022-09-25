@@ -71,9 +71,6 @@ public class student {
         modules.add(module);
     }
 
-    public ArrayList<module> getModule(){
-        return modules;
-    }
 
     public void addCourseProgramme(programme programme){
         courses.add(programme);
@@ -81,4 +78,5 @@ public class student {
     public ArrayList<programme> getCourses(){
         return courses;
     }
+
 }
