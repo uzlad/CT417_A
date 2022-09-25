@@ -90,13 +90,13 @@ public class student {
         string += "Course Details: \n";
         string += "\n=======================================\n";
         for (programme course: courses){
-            string += "Course Name: " + course.getCourseName();
+            string += "\nCourse Name: " + course.getCourseName();
         }
         string += "Module Details: \n";
         string += "=======================================\n";
         for (module module: modules){
-            string += "Module Name: " + module.getModuleName();
-            string += "Lecturer: " + module.getLecturer().getName();
+            string += "\nModule Name: " + module.getModuleName();
+            string += "\nLecturer: " + module.getLecturer().getName();
         }
         string += "\n=======================================\n";
         return string;

@@ -87,8 +87,8 @@ public class programme {
         string += "Module Details: \n";
         string += "=======================================\n";
         for (module module: modules){
-            string += "Module Name: " + module.getModuleName();
-            string += "Lecturer: " + module.getLecturer().getName();
+            string += "\nModule Name: " + module.getModuleName();
+            string += "\nLecturer: " + module.getLecturer().getName();
         }
         string += "\n=======================================\n";
         return string;
