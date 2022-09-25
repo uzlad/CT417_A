@@ -32,6 +32,7 @@ public class programme {
 
     public programme(String courseName) {
         this.courseName = courseName;
+
         this.modules = new ArrayList<module>();
         this.students = new ArrayList<student>();
     }
@@ -75,5 +76,21 @@ public class programme {
         students.add(student);
     }
 
-
+    @Override
+    public String toString(){
+        String string = "Course Programme Details: \n";
+        string += "=======================================\n";
+        string += "Course Name: " + this.courseName;
+        string += "\nStart Date: " +  this.startDate;
+        string += "\nEnd Date: " + this.endDate;
+        string += "\n=======================================\n";
+        string += "Module Details: \n";
+        string += "=======================================\n";
+        for (module module: modules){
+            string += "Module Name: " + module.getModuleName();
+            string += "Lecturer: " + module.getLecturer().getName();
+        }
+        string += "\n=======================================\n";
+        return string;
+    }
 }

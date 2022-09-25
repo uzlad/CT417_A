@@ -13,15 +13,18 @@ public class module {
     public module(String moduleName, String moduleID, ArrayList<student> students, ArrayList<programme> courses, lecturer lecturer){
         this.moduleName = moduleName;
         this.moduleID = moduleID;
-        this.students = students;
-        this.courses = courses;
         this.lecturer = lecturer;
 
+        this.students = students;
+        this.courses = courses;
     }
 
     public module(String moduleName, String moduleID) {
         this.moduleName = moduleName;
         this.moduleID = moduleID;
+
+        this.courses = new ArrayList<programme>();
+        this.students = new ArrayList<student>();
     }
 
     public module(String moduleName, String moduleID, lecturer lecturer) {

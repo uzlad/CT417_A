@@ -79,4 +79,26 @@ public class student {
         return courses;
     }
 
+    @Override
+    public String toString(){
+        String string = "Student Details: \n";
+        string += "=======================================\n";
+        string += "Name: " + this.name;
+        string += "Age: " + this.age;
+        string += "\nUsername: " +  this.getUserName();
+        string += "\n=======================================\n";
+        string += "Course Details: \n";
+        string += "\n=======================================\n";
+        for (programme course: courses){
+            string += "Course Name: " + course.getCourseName();
+        }
+        string += "Module Details: \n";
+        string += "=======================================\n";
+        for (module module: modules){
+            string += "Module Name: " + module.getModuleName();
+            string += "Lecturer: " + module.getLecturer().getName();
+        }
+        string += "\n=======================================\n";
+        return string;
+    }
 }
