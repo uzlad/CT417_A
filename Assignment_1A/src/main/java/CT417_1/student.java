@@ -84,7 +84,7 @@ public class student {
         String string = "Student Details: \n";
         string += "=======================================\n";
         string += "Name: " + this.name;
-        string += "Age: " + this.age;
+        string += " Age: " + this.age;
         string += "\nUsername: " +  this.getUserName();
         string += "\n=======================================\n";
         string += "Course Details: \n";
@@ -92,7 +92,7 @@ public class student {
         for (programme course: courses){
             string += "\nCourse Name: " + course.getCourseName();
         }
-        string += "Module Details: \n";
+        string += "\nModule Details: \n";
         string += "=======================================\n";
         for (module module: modules){
             string += "\nModule Name: " + module.getModuleName();
